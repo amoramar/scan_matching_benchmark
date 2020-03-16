@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>scan_matching_benchmark</name>
+  <version>0.0.1</version>
+  <description>3D Scan Matching Benchmark.</description>
+
+  <author email="alejandromoramar@gmail.com">Alejandro Mora</author>
+  <maintainer email="alejandromoramar@gmail.com">Alejandro Mora</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+
+  <!-- <build_export_depend>imusens</build_export_depend> -->
+<!--
+  <test_depend>pcl_ros</test_depend>
+  <test_depend>roscpp</test_depend>
+  <test_depend>scaled_common</test_depend>
+  <test_depend>sensor_msgs</test_depend>
+  <test_depend>eigen</test_depend>
+  <test_depend>geometry_msgs</test_depend>
+  <depend>imusens</depend>
+
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>scaled_common</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>eigen</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>imusens</exec_depend>
+
+-->
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
