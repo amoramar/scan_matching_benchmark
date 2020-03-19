@@ -18,6 +18,7 @@ find_package(Ceres REQUIRED)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+	pcl_ros
 )
 
 ## Find PCL, Eigen and Lapack packages
@@ -45,7 +46,7 @@ endif()
 catkin_package(
  INCLUDE_DIRS include
  LIBRARIES scan_matching_benchmark
- CATKIN_DEPENDS roscpp
+ CATKIN_DEPENDS roscpp pcl_ros
  DEPENDS EIGEN3
 )
 
@@ -86,4 +87,19 @@ add_library(${PROJECT_NAME}
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}
     ${catkin_LIBRARIES}
+)
+
+###########
+## Tests ##
+###########
+
+set(TEST_SOURCE_FILES
+		test/main.cpp
+		test/transform.cpp)
+
+catkin_add_gtest(${PROJECT_NAME}_test ${TEST_SOURCE_FILES})
+
+target_link_libraries(${PROJECT_NAME}_test
+  ${catkin_LIBRARIES}
+  ${Boost_LIBRARIES}
 )

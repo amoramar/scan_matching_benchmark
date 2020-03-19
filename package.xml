@@ -11,7 +11,15 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <!-- Package dependencies -->
   <depend>roscpp</depend>
+  <depend>eigen</depend>
+  <depend>pcl_ros</depend>
+
+  <!-- Test dependencies -->
+  <test_depend>roscpp</test_depend>
+  <test_depend>eigen</test_depend>
+  <test_depend>pcl_ros</test_depend>
 
   <!-- <build_export_depend>imusens</build_export_depend> -->
 <!--
